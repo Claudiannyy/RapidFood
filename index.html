@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/logg.png" type="image/x-icon">
+    <title>RapidFood</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="nome-empresa">RapidFood</h1>
+      <p class="legenda-empresa">Sua refeição favorita, entregue em minutos.</p>
+    </header>
+    <main>
+      <section class="modal escondido" >
+        <div class="dados-confirmacao">
+          <p class="aviso-titulo-confirmar">Confirme seu pedido</p>
+          <div class="informacoes-pedido">
+            <ul>
+            <li class="prato">
+              <p class="nome">Frango Yin Yang</p>
+              <p class="preco">10,00</p>
+            </li>
+            <li class="bebida">
+              <p class="nome">Coquinha gelada</p>
+              <p class="preco">5,50</p>
+            </li>
+            <li class="sobremesa">
+              <p class="nome">Pudim</p>
+              <p class="preco">8,00</p>
+            </li>
+            <li class="total">
+              <p class="descricao-total">Total</p>
+              <p class="valor-total">23,50</p>
+            </li>
+          </ul>
+          </div>
+          <button class="botao-confirmar-pedido" onclick=" enviarPedido() ">
+            Tudo certo, pode pedir!
+          </button>
+        
+        <button class="cancelar" onclick="cancelar()">Cancelar</button>
+      </div>
+      </section>
+      <h2 class="nome-secao">Primeiro, seu prato</h2>
+      <section class="opcoes comidas">
+        <div class="opcao" onclick="selecionarPrato(this)">
+          <img
+            class="imagem-produto"
+            src="./assets/parmegiana.jpg"
+            alt="foto da parmegiana"
+          />
+          <div class="informacoes">
+            <p class="titulo">Parmegiana(frango)</p>
+            <p class="descricao">frango,molho de tomate e queijo. Com fritas e macarrão.</p>
+            <p class="preco">R$ 21,80</p>
+          </div>
+        </div>
+        <div class="opcao" onclick="selecionarPrato(this)">
+          <img
+            class="imagem-produto"
+            src="./assets/lasanha.jpg"
+            alt="foto de lasanha"
+          />
+          <div class="informacoes">
+            <p class="titulo">Lasanha</p>
+            <p class="descricao"> molho de carne, queijo e molho bechamel. Acompanha salada.</p>
+            <p class="preco">R$ 24,50</p>
+          </div>
+        </div>
+        <div class="opcao" onclick="selecionarPrato(this)">
+          <img
+            class="imagem-produto"
+            src="./assets/strogonoff.jpg"
+            alt=""
+          />
+          <div class="informacoes">
+            <p class="titulo">Strogonoff</p>
+            <p class="descricao"> frango,molho e creme de leite. Acompanha arroz e batata palha</p>
+            <p class="preco">R$ 23,50</p>
+          </div>
+        </div>
+        <div class="opcao" onclick="selecionarPrato(this)">
+          <img
+            class="imagem-produto"
+            src="./assets/almoco.jpg"
+            alt=""
+          />
+          <div class="informacoes">
+            <p class="titulo">Prato do dia</p>
+            <p class="descricao">Feijão, arroz, carne grelhada e salada fresca.</p>
+            <p class="preco">R$ 19,90</p>
+          </div>
+        </div>
+        <div class="opcao" onclick="selecionarPrato(this)">
+          <img
+            class="imagem-produto"
+            src="./assets/feijoada.jpg"
+            alt=""
+          />
+          <div class="informacoes">
+            <p class="titulo">Feijoada</p>
+            <p class="descricao">Feijão preto com carnes, arroz, farofa e couve.</p>
+            <p class="preco">R$ 27,90</p>
+          </div>
+        </div>
+      </section>
+      <h2 class="nome-secao">Agora, sua bebida</h2>
+      <section class="opcoes bebidas">
+        <div class="opcao" onclick="selecionarBebida(this)">
+          <img
+            class="imagem-produto"
+            src="./assets/coca.jpg"
+            alt="imagem da lata de coca-cola"
+          />
+          <div class="informacoes">
+            <p class="titulo">Coca-cola</p>
+            <p class="descricao">Lata 350ml</p>
+            <p class="preco">R$ 3,29</p>
+          </div>
+        </div>
+        <div class="opcao"onclick="selecionarBebida(this)">
+          <img
+            class="imagem-produto"
+            src="./assets/guarana.jpg"
+            alt="imagem do guaraná"
+          />
+          <div class="informacoes">
+            <p class="titulo">Guaraná</p>
+            <p class="descricao">Lata 350ml</p>
+            <p class="preco">R$ 2,75</p>
+          </div>
+        </div>
+          <div class="opcao" onclick="selecionarBebida(this)">
+            <img
+              class="imagem-produto"
+              src="./assets/fanta.jpg"
+              alt="imagem da fanta"
+            />
+            <div class="informacoes">
+              <p class="titulo">Fanta</p>
+              <p class="descricao">Lata 350ml</p>
+              <p class="preco">R$ 2,99</p>
+            </div>
+          </div>
+            <div class="opcao" onclick="selecionarBebida(this)">
+              <img
+                class="imagem-produto"
+                src="./assets/Schweppes.jpg"
+                alt="imagem do Schweppes"
+              />
+              <div class="informacoes">
+                <p class="titulo">Schweppes</p>
+                <p class="descricao">Lata 350ml</p>
+                <p class="preco">R$ 3,49</p>
+              </div>
+            </div>
+              <div class="opcao" onclick="selecionarBebida(this)">
+          <img
+            class="imagem-produto"
+            src="./assets/aguaTonica.jpg"
+            alt="imagem da água tônica"
+          />
+          <div class="informacoes">
+            <p class="titulo">Água tônica</p>
+            <p class="descricao">Lata 350ml</p>
+            <p class="preco">R$ 3,59</p>
+          </div>
+        </div>
+      </div>
+      </section>
+      <h2 class="nome-secao">Por fim, sua sobremesa</h2>
+      <section class="opcoes sobremesas">
+        <div class="opcao" onclick="selecionarSobremesa(this)">
+          <img
+            class="imagem-produto"
+            src="./assets/pudim.jpg"
+            alt="imagem do pudim"
+          />
+          <div class="informacoes">
+            <p class="titulo">Pudim</p>
+            <p class="descricao">com calda de caramelo dourada, sabor doce e suave.</p>
+            <p class="preco">R$ 10,00</p>
+          </div>
+        </div>
+        <div class="opcao" onclick="selecionarSobremesa(this)">
+          <img
+            class="imagem-produto"
+            src="./assets/brownie.jpg"
+            alt="imagem do brownie"
+          />
+          <div class="informacoes">
+            <p class="titulo">Brownie</p>
+            <p class="descricao">Bolo denso e fudgy, com pedaços de chocolate derretido</p>
+            <p class="preco">R$ 8,30</p>
+          </div>
+        </div>
+        <div class="opcao" onclick="selecionarSobremesa(this)">
+          <img
+            class="imagem-produto"
+            src="./assets/mousse.jpg"
+            alt="imagem do mousse"
+          />
+          <div class="informacoes">
+            <p class="titulo">Mousse</p>
+            <p class="descricao">Mousse com o sabor tropical e levemente ácido do maracujá.</p>
+            <p class="preco">R$ 11,40</p>
+          </div>
+        </div>
+        <div class="opcao"onclick="selecionarSobremesa(this)">
+          <img
+            class="imagem-produto"
+            src="./assets/tortaLimao.jpg"
+            alt="imagem da torta de limão"
+          />
+          <div class="informacoes">
+            <p class="titulo">Torta</p>
+            <p class="descricao">Base crocante, recheio cremoso de limão e cobertura de chantilly</p>
+            <p class="preco">R$ 14,90</p>
+          </div>
+        </div>
+        <div class="opcao"onclick="selecionarSobremesa(this)">
+          <img
+            class="imagem-produto"
+            src="./assets/pave.jpg"
+            alt="imagem do pavê"
+          />
+          <div class="informacoes">
+            <p class="titulo">Pavê</p>
+            <p class="descricao"> camadas de biscoito, creme de baunilha e chantilly.</p>
+            <p class="preco">R$ 13,40</p>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    <footer>
+      <button class="concluir-selecionados" onclick="avancarParaConfirmacao()">
+        <p class="aviso-avancar">Selecione os 3 itens para fechar o pedido</p>
+      </button>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

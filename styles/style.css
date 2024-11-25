@@ -1,0 +1,235 @@
+body {
+  background-color: #eeeeee;
+}
+header {
+  width: 100vw;
+  background-color: #038c25;
+  color: #ffffff;
+  padding: 1% 2%;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.nome-empresa {
+  font-family: "Righteous", sans-serif;
+  font-size: 2.75rem;
+  font-weight: 400;
+  line-height: 3.414rem;
+  letter-spacing: -0.012em;
+  text-align: left;
+}
+.legenda-empresa {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.318rem;
+  text-align: left;
+}
+main {
+  padding: 22% 1% 20% 2%;
+}
+
+.nome-secao {
+  font-family: "Righteous", sans-serif;
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 2.018rem;
+  letter-spacing: 0.018em;
+  text-align: left;
+  color: #333333;
+  padding: 3% 1% 2% 2%;
+}
+.opcoes {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+}
+
+.opcao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 2%;
+  padding: 1% 2% 1% 2%;
+  width: 150px;
+  height: 180px;
+  margin-right: 2%;
+}
+
+.titulo {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.172rem;
+  text-align: left;
+  color: #333333;
+}
+.imagem-produto {
+  width: 150px;
+  height: 80px;
+  border-radius: 4px;
+  display: flex;
+  padding-bottom: 8%;
+}
+.descricao {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.938rem;
+  font-weight: 300;
+  line-height: 1.099rem;
+  text-align: left;
+  color: #a6a6a6;
+}
+.preco {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.172rem;
+  text-align: left;
+}
+footer {
+  background-color: #ffffff;
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.concluir-selecionados {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #cbcbcb;
+  width: 364px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+}
+.aviso-avancar {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.465rem;
+  letter-spacing: 0.018em;
+  text-align: center;
+  padding: 1% 2%;
+}
+.selecionado {
+  box-shadow: 0px 0px 0px 5px rgba(50, 183, 47, 1) inset;
+  border-radius: 9px;
+}
+
+.modal {
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.dados-confirmacao {
+  background-color: rgba(80, 208, 116, 1);
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 80vw;
+  height: 50vh;
+  border-radius: 9px;
+  padding: 5%;
+}
+.aviso-titulo-confirmar {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.611rem;
+  text-align: center;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.611rem;
+  letter-spacing: 0.018em;
+  text-align: left;
+  align-items: center;
+}
+.total {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.611rem;
+  letter-spacing: 0.018em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.botao-confirmar-pedido {
+  color: #50d074;
+  width: 100%;
+  height: 20%;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.611rem;
+  letter-spacing: 0.018em;
+  text-align: center;
+}
+.cancelar {
+  all: unset;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.44px;
+  letter-spacing: 0.018em;
+  text-align: center;
+  cursor: pointer;
+}
+.ativar-botao {
+  background-color: #32b72f;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.465rem;
+  letter-spacing: 0.018em;
+  text-align: center;
+  border: none;
+}
+.escondido {
+  display: none;
+}
+@media (min-width: 600px) {
+  main {
+    padding: 3% 0;
+    margin: 6% 2%;
+  }
+  .nome-secao {
+    padding: 2% 0 2% 0%;
+  }
+  .opcoes {
+    overflow-x: hidden;
+  }
+}
