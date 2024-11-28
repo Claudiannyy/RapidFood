@@ -1,4 +1,4 @@
-# Projeto de app de comida: RapidFood 🍽️
+#RapidFood 🍽️
 
 📜 **Descrição**  
 Bem-vindo ao **RapidFood**! Este é um projeto de uma página interativa onde o usuário pode escolher entre várias opções de **comida**, **sobremesa** e **bebida**. Ao finalizar o pedido, o usuário visualiza um resumo com o valor total e é redirecionado automaticamente para o WhatsApp, onde pode confirmar e finalizar a compra.
